@@ -1,0 +1,14 @@
+.logo {
+  font-family: $logo-font;
+  font-size: map-get($font-size, logo-font);
+  color: $blue;
+  letter-spacing: map-get($letter-spacing, standard);
+
+  &__header-color {
+    color: $black;
+  }
+
+  &__footer-color {
+    color: $white;
+  }
+}

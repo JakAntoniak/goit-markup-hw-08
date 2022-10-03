@@ -1,0 +1,35 @@
+@import "./utils/colors";
+@import "./utils/fonts";
+@import "./utils/pre-settings";
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+body {
+  background-color: $body-background;
+  color: $black;
+  font-family: $standard-font;
+  font-size: map-get($font-size, standard);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+@import "./components/page-header";
+@import "./components/index-main-page";
+@import "./components/page-footer";
+
+@import "./components/hidden";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/social-media-block";
+@import "./components/modal";
+@import "./components/portfolio-main-page";

@@ -1,0 +1,66 @@
+.footer-background-color {
+  background: $background-footer;
+}
+.footer {
+  display: flex;
+  gap: 70px;
+  padding: 60px 0;
+  justify-content: space-between;
+}
+
+%footer-address {
+  font-weight: map-get($font-weight, regular);
+  font-size: map-get($font-size, standard);
+  line-height: 1.71;
+  letter-spacing: map-get($letter-spacing, standard);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 20px;
+  }
+
+  &__address-color {
+    @extend %footer-address;
+    color: $white;
+  }
+  &__contact-color {
+    @extend %footer-address;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-header {
+  padding-bottom: 20px;
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, standard);
+  line-height: 16px;
+  letter-spacing: map-get($letter-spacing, standard);
+  text-transform: uppercase;
+  color: $white;
+}
+
+.newsletter {
+  display: flex;
+  padding-top: 9px;
+
+  &__input {
+    width: 358px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $background-footer;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+    outline: none;
+    height: 50px;
+    padding-left: 16px;
+  }
+}
