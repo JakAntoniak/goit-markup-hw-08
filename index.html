@@ -13,50 +13,62 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header-border">
-        <header class="header container">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo__header-color">Studio</span></a
-          >
-          <nav class="menu-nav">
-            <div class="menu-nav--active">
-              <a class="menu-nav__menu-item" href="">Agencja</a>
-            </div>
-            <a class="menu-nav__menu-item" href="./portfolio.html">Portfolio</a>
-            <a class="menu-nav__menu-item" href="">Kontakt</a>
-          </nav>
-          <ul class="contacts">
-            <li>
-              <a class="contacts__menu-item" href="mailto:info@devstudio.com">
-                <svg class="contacts__icon-position" width="16" height="12">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contacts__menu-item" href="tel:+48111111111">
-                <svg class="contacts__icon-position" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </header>
-      </div>
-      <div class="welcome-section-background">
-        <section class="welcome-section container">
-          <h1 class="welcome-section__text">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
-          <button class="button" type="button" data-modal-open>
-            Zamów usługe
-          </button>
-        </section>
-      </div>
-      <main class="main-page">
+    <div class="header-border">
+      <header class="header container">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__header-color">Studio</span></a
+        >
+        <nav class="menu-nav">
+          <div class="menu-nav--active">
+            <a class="menu-nav__menu-item" href="">Agencja</a>
+          </div>
+          <a class="menu-nav__menu-item" href="./portfolio.html">Portfolio</a>
+          <a class="menu-nav__menu-item" href="">Kontakt</a>
+        </nav>
+        <ul class="contacts">
+          <li>
+            <a class="contacts__menu-item" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon-position" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contacts__menu-item" href="tel:+48111111111">
+              <svg class="contacts__icon-position" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header__mobile js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__mobile-menu">
+            <use
+              xlink:href="./images/icons.svg#icon-mobile-menu"
+              width="24"
+              height="16 "
+            ></use>
+          </svg>
+        </button>
+      </header>
+    </div>
+    <div class="welcome-section-background">
+      <section class="welcome-section container">
+        <h1 class="welcome-section__text">
+          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+        </h1>
+        <button class="button" type="button" data-modal-open>
+          Zamów usługe
+        </button>
+      </section>
+    </div>
+    <!-- <main class="main-page">
         <div class="article-section container section">
           <ul>
             <li>
@@ -429,11 +441,11 @@
             </svg>
           </div>
         </section>
-      </main>
+      </main> -->
 
-      <!-- FOOTER -->
+    <!-- FOOTER -->
 
-      <div class="footer-background-color">
+    <!-- <div class="footer-background-color">
         <footer class="footer container">
           <div class="footer-contacts">
             <a class="logo" href="./index.html"
@@ -526,9 +538,9 @@
           </div>
         </footer>
       </div>
-    </div>
+    
 
-    <!-- MODAL SECTION -->
+   
 
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
@@ -622,7 +634,68 @@
         </form>
       </div>
     </div>
+    -->
+    <div class="mobile js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mobile__exit">
+          <use
+            xlink:href="./images/icons.svg#icon-form-close"
+            width="18.67"
+            height="18.67"
+          ></use>
+        </svg>
+      </button>
 
+      <ul class="mobile__menu">
+        <li><a href="./index.html" class="mobile__menu-link">Agencja</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile__menu-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contacts.html" class="mobile__menu-link">Kontakty</a>
+        </li>
+      </ul>
+      <div class="mobile__links">
+        <ul class="mobile__contacts">
+          <li>
+            <a href="tel:+48111111111" class="mobile__contacts-phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mobile__contacts-email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile__socials">
+          <li>
+            <a href="https://instagram.com" class="mobile__socials-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile__socials-link">|</li>
+          <li>
+            <a href="https://twitter.com" class="mobile__socials-link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile__socials-link">|</li>
+          <li>
+            <a href="https://facebook.com" class="mobile__socials-link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile__socials-link">|</li>
+          <li>
+            <a href="https://linkedin.com" class="mobile__socials-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

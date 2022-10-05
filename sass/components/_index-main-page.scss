@@ -1,11 +1,29 @@
 .welcome-section-background {
-  background-color: $background-alpha;
   background-image: linear-gradient(
       0deg,
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url(../images/welcome-section-background-image.jpg);
+    url("../images/welcome-section-background-image@1x.jpg");
+  background-color: $background-alpha;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .welcome-section-background {
+    max-width: 767px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/welcome-section-background-image@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .welcome-section {
@@ -28,126 +46,156 @@
   }
 }
 
-.main-page {
-  display: flex;
-  flex-direction: column;
-}
-.article-section {
-  line-height: 1.71;
-  letter-spacing: map-get($letter-spacing, standard);
+// .welcome-section-background {
+//   background-color: $background-alpha;
+//   background-image: linear-gradient(
+//       0deg,
+//       rgba(47, 48, 58, 0.4) 0%,
+//       rgba(47, 48, 58, 0.4) 100%
+//     ),
+//     url(../images/welcome-section-background-image.jpg);
+// }
 
-  &__logo {
-    background-color: $background-article;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
-}
+// .welcome-section {
+//   width: 1200px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 30px;
+//   margin: 0 auto;
 
-.article-section > ul {
-  display: flex;
-  gap: 30px;
-}
+//   &__text {
+//     color: $white;
+//     font-weight: map-get($font-weight, extrabold);
+//     font-size: map-get($font-size, main-text);
+//     line-height: 1.37;
+//     text-align: center;
+//     letter-spacing: map-get($letter-spacing, header);
+//     text-transform: uppercase;
+//     padding: 200px 252px 0;
+//     margin: 0 auto;
+//   }
+// }
 
-.article-header {
-  font-weight: map-get($font-weight, bold);
+// .main-page {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .article-section {
+//   line-height: 1.71;
+//   letter-spacing: map-get($letter-spacing, standard);
 
-  &__paragraph {
-    color: $grey;
-  }
-}
+//   &__logo {
+//     background-color: $background-article;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//   }
+// }
 
-.what-we-do-section {
-  padding-top: 0;
+// .article-section > ul {
+//   display: flex;
+//   gap: 30px;
+// }
 
-  &__images {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+// .article-header {
+//   font-weight: map-get($font-weight, bold);
 
-.what-we-do-section-card {
-  display: flex;
-}
+//   &__paragraph {
+//     color: $grey;
+//   }
+// }
 
-.section-header {
-  text-align: center;
-  font-weight: map-get($font-weight, bold);
-  font-size: map-get($font-size, section-header);
-  line-height: 1.166;
-  letter-spacing: map-get($letter-spacing, standard);
-  padding-bottom: 50px;
-}
+// .what-we-do-section {
+//   padding-top: 0;
 
-.images-label {
-  position: relative;
+//   &__images {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
 
-  &__description {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(47, 48, 58, 0.8);
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: map-get($font-weight, bold);
-    font-size: map-get($font-size, standard);
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: map-get($letter-spacing, standard);
-    color: $white;
-    padding: 27px 0;
-  }
-}
+// .what-we-do-section-card {
+//   display: flex;
+// }
 
-.our-team-background {
-  background: $background-article;
-}
+// .section-header {
+//   text-align: center;
+//   font-weight: map-get($font-weight, bold);
+//   font-size: map-get($font-size, section-header);
+//   line-height: 1.166;
+//   letter-spacing: map-get($letter-spacing, standard);
+//   padding-bottom: 50px;
+// }
 
-.our-team-section {
-  &__images {
-    display: flex;
-    justify-content: space-between;
-  }
+// .images-label {
+//   position: relative;
 
-  &__card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    gap: 30px;
-  }
-}
+//   &__description {
+//     position: absolute;
+//     bottom: 0;
+//     background-color: rgba(47, 48, 58, 0.8);
+//     text-transform: uppercase;
+//     width: 100%;
+//     font-weight: map-get($font-weight, bold);
+//     font-size: map-get($font-size, standard);
+//     line-height: 16px;
+//     text-align: center;
+//     letter-spacing: map-get($letter-spacing, standard);
+//     color: $white;
+//     padding: 27px 0;
+//   }
+// }
 
-.signature {
-  font-weight: map-get($font-weight, medium);
-  font-size: map-get($font-size, enlarged);
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: map-get($letter-spacing, standard);
-  padding: 30px 0;
+// .our-team-background {
+//   background: $background-article;
+// }
 
-  &__position {
-    padding-top: 10px;
-    color: $grey;
-    font-weight: map-get($font-weight, regular);
-    font-size: map-get($font-size, enlarged);
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: map-get($letter-spacing, standard);
-  }
-}
+// .our-team-section {
+//   &__images {
+//     display: flex;
+//     justify-content: space-between;
+//   }
 
-.our-clients-logos {
-  display: flex;
-  justify-content: space-between;
-}
-.client-icon {
-  width: 170px;
-  height: 92px;
-  border: 1px solid $icon-background;
-  border-radius: 4px;
-  fill: $icon-background;
-  cursor: pointer;
+//   &__card {
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     gap: 30px;
+//   }
+// }
 
-  &:hover {
-    fill: $blue;
-    border-color: $blue;
-  }
-}
+// .signature {
+//   font-weight: map-get($font-weight, medium);
+//   font-size: map-get($font-size, enlarged);
+//   line-height: 1.19;
+//   text-align: center;
+//   letter-spacing: map-get($letter-spacing, standard);
+//   padding: 30px 0;
+
+//   &__position {
+//     padding-top: 10px;
+//     color: $grey;
+//     font-weight: map-get($font-weight, regular);
+//     font-size: map-get($font-size, enlarged);
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: map-get($letter-spacing, standard);
+//   }
+// }
+
+// .our-clients-logos {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .client-icon {
+//   width: 170px;
+//   height: 92px;
+//   border: 1px solid $icon-background;
+//   border-radius: 4px;
+//   fill: $icon-background;
+//   cursor: pointer;
+
+//   &:hover {
+//     fill: $blue;
+//     border-color: $blue;
+//   }
+// }
