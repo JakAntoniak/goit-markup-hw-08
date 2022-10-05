@@ -102,6 +102,21 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header__mobile {
+    display: none;
+  }
+  .menu-nav {
+    width: 254px;
+    letter-spacing: 0.02em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+  }
 }
 .welcome-section-background {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/welcome-section-background-image@1x.jpg");
@@ -772,7 +787,9 @@ body {
   gap: 36px;
 }
 .mobile__menu-link {
+  color: red;
   text-decoration: none;
+  font-weight: 500;
 }
 .mobile__links {
   display: -webkit-box;

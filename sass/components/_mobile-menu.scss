@@ -47,6 +47,7 @@
   &.is-open {
     transform: translateX(0);
   }
+
   &__menu {
     padding: 0;
     margin: 0;
@@ -54,19 +55,20 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
-
-    &-link {
-      // color: $secondary-text;
-      text-decoration: none;
-      // font-weight: $font-medium;
-      // font-size: $font-link-mobile-menu;
-
-      // &:hover,
-      // &:focus {
-      //   color: $hover-text;
-      // }
-    }
   }
+
+  &__menu-link {
+    color: red;
+    text-decoration: none;
+    font-weight: map-get($font-weight, medium);
+    // font-size: $font-link-mobile-menu;
+
+    // &:hover,
+    // &:focus {
+    //   color: $hover-text;
+    // }
+  }
+
   &__links {
     display: flex;
     flex-direction: column;
