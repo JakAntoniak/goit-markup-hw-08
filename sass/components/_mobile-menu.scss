@@ -20,14 +20,14 @@
   cursor: pointer;
   border: none;
   position: absolute;
-  // fill: $secondary-text;
+  fill: $black;
   top: 21px;
   right: 25px;
 
-  // &:focus,
-  // &:hover {
-  //   fill: $hover-text;
-  // }
+  &:focus,
+  &:hover {
+    fill: $blue;
+  }
 }
 .mobile {
   position: fixed;
@@ -58,15 +58,15 @@
   }
 
   &__menu-link {
-    color: red;
+    color: $black;
     text-decoration: none;
     font-weight: map-get($font-weight, medium);
-    // font-size: $font-link-mobile-menu;
+    font-size: map-get($font-size, mobile-menu);
 
-    // &:hover,
-    // &:focus {
-    //   color: $hover-text;
-    // }
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 
   &__links {
@@ -78,26 +78,27 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
     &-phone {
-      font-size: 34px;
-      // font-weight: $font-medium;
-      // color: $hover-text;
+      font-size: map-get($font-size, mobile-contact);
+      font-weight: map-get($font-weight, medium);
+      color: $blue;
     }
     &-email {
       font-size: 24px;
-      // font-weight: $font-medium;
-      // color: $primary-text;
+      font-weight: map-get($font-weight, medium);
+      color: $grey;
     }
   }
   &__socials {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    // &-link {
-    //   font-size: $font-card-header;
-    //   color: $hover-text;
-    //   font-weight: $font-medium;
-    // }
+    &-link {
+      font-size: map-get($font-size, cardheader);
+      color: $blue;
+      font-weight: map-get($font-weight, medium);
+    }
   }
   &__exit {
     width: 19px;
