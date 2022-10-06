@@ -107,33 +107,97 @@
   }
 }
 
+// MAIN PAGE
+
 .main-page {
   display: flex;
   flex-direction: column;
 }
-// .article-section {
-//   line-height: 1.71;
-//   letter-spacing: map-get($letter-spacing, standard);
 
-//   &__logo {
-//     background-color: $background-article;
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-//   }
-// }
+.article-section {
+  line-height: 1.71;
+  letter-spacing: map-get($letter-spacing, standard);
+  padding-top: 60px;
 
-// .article-section > ul {
-//   display: flex;
-//   gap: 30px;
-// }
+  &__logo {
+    background-color: $background-article;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
 
-// .article-header {
-//   font-weight: map-get($font-weight, bold);
+.article-section > ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
 
-//   &__paragraph {
-//     color: $grey;
-//   }
-// }
+.article-header {
+  font-weight: map-get($font-weight, bold);
+  text-align: center;
+
+  &__paragraph {
+    color: $grey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-section {
+    line-height: 1.71;
+    letter-spacing: map-get($letter-spacing, standard);
+    padding-top: 60px;
+
+    &__logo {
+      background-color: $background-article;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .article-section > ul {
+    display: flex;
+    gap: 30px;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  .article-card {
+    width: 353px;
+  }
+
+  .article-header {
+    font-weight: map-get($font-weight, bold);
+    text-align: center;
+    &__paragraph {
+      color: $grey;
+    }
+  }
+}
+
+.article-section {
+  line-height: 1.71;
+  letter-spacing: map-get($letter-spacing, standard);
+
+  &__logo {
+    background-color: $background-article;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+.article-section > ul {
+  display: flex;
+  gap: 30px;
+}
+
+.article-header {
+  font-weight: map-get($font-weight, bold);
+
+  &__paragraph {
+    color: $grey;
+  }
+}
 
 // .what-we-do-section {
 //   padding-top: 0;
