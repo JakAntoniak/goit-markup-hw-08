@@ -168,143 +168,312 @@
 
   .article-header {
     font-weight: map-get($font-weight, bold);
-    text-align: center;
+    text-align: left;
     &__paragraph {
       color: $grey;
     }
   }
 }
 
-.article-section {
-  line-height: 1.71;
-  letter-spacing: map-get($letter-spacing, standard);
+@media screen and (min-width: 1200px) {
+  .article-section {
+    line-height: 1.71;
+    letter-spacing: map-get($letter-spacing, standard);
 
-  &__logo {
-    background-color: $background-article;
-    border-radius: 4px;
-    margin-bottom: 30px;
+    &__logo {
+      background-color: $background-article;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .article-section > ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .article-card {
+    width: 270px;
+  }
+
+  .article-header {
+    font-weight: map-get($font-weight, bold);
+    text-align: left;
+
+    &__paragraph {
+      color: $grey;
+    }
   }
 }
 
-.article-section > ul {
-  display: flex;
-  gap: 30px;
+.what-we-do-section {
+  display: none;
 }
 
-.article-header {
+@media screen and (min-width: 768px) {
+  .what-we-do-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-we-do-section {
+    padding-top: 0;
+    display: inline;
+
+    &__images {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .what-we-do-section-card {
+    display: flex;
+  }
+
+  .section-header {
+    text-align: center;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, section-header);
+    line-height: 1.166;
+    letter-spacing: map-get($letter-spacing, standard);
+    padding-bottom: 50px;
+  }
+
+  .images-label {
+    position: relative;
+
+    &__description {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(47, 48, 58, 0.8);
+      text-transform: uppercase;
+      width: 100%;
+      font-weight: map-get($font-weight, bold);
+      font-size: map-get($font-size, standard);
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: map-get($letter-spacing, standard);
+      color: $white;
+      padding: 27px 0;
+    }
+  }
+}
+
+.our-team-background {
+  background: $background-article;
+}
+
+.section-header {
+  text-align: center;
   font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, section-header);
+  line-height: 1.166;
+  letter-spacing: map-get($letter-spacing, standard);
+  padding-bottom: 30px;
+}
 
-  &__paragraph {
-    color: $grey;
+.our-team-section {
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 0 14px;
+  }
+
+  &__card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    & > figure > img {
+      width: 450px;
+      height: 460px;
+      margin: 0 auto;
+    }
   }
 }
 
-// .what-we-do-section {
-//   padding-top: 0;
+.signature {
+  font-weight: map-get($font-weight, medium);
+  font-size: map-get($font-size, enlarged);
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: map-get($letter-spacing, standard);
+  padding: 30px 0;
 
-//   &__images {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
+  &__position {
+    padding-top: 10px;
+    color: $grey;
+    font-weight: map-get($font-weight, regular);
+    font-size: map-get($font-size, enlarged);
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: map-get($letter-spacing, standard);
+  }
+}
 
-// .what-we-do-section-card {
-//   display: flex;
-// }
+@media screen and (min-width: 768px) {
+  .our-team-background {
+    background: $background-article;
+  }
 
-// .section-header {
-//   text-align: center;
-//   font-weight: map-get($font-weight, bold);
-//   font-size: map-get($font-size, section-header);
-//   line-height: 1.166;
-//   letter-spacing: map-get($letter-spacing, standard);
-//   padding-bottom: 50px;
-// }
+  .section-header {
+    text-align: center;
+    font-weight: map-get($font-weight, bold);
+    font-size: map-get($font-size, section-header);
+    line-height: 1.166;
+    letter-spacing: map-get($letter-spacing, standard);
+    padding-bottom: 30px;
+  }
 
-// .images-label {
-//   position: relative;
+  .our-team-section {
+    &__images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      margin: 0;
+      padding: 0 14px;
+    }
 
-//   &__description {
-//     position: absolute;
-//     bottom: 0;
-//     background-color: rgba(47, 48, 58, 0.8);
-//     text-transform: uppercase;
-//     width: 100%;
-//     font-weight: map-get($font-weight, bold);
-//     font-size: map-get($font-size, standard);
-//     line-height: 16px;
-//     text-align: center;
-//     letter-spacing: map-get($letter-spacing, standard);
-//     color: $white;
-//     padding: 27px 0;
-//   }
-// }
+    &__card {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
 
-// .our-team-background {
-//   background: $background-article;
-// }
+      & > figure > img {
+        width: 354px;
+        height: 374px;
+      }
+    }
+  }
 
-// .our-team-section {
-//   &__images {
-//     display: flex;
-//     justify-content: space-between;
-//   }
+  .signature {
+    font-weight: map-get($font-weight, medium);
+    font-size: map-get($font-size, enlarged);
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: map-get($letter-spacing, standard);
+    padding: 30px 0;
 
-//   &__card {
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//       0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     gap: 30px;
-//   }
-// }
+    &__position {
+      padding-top: 10px;
+      color: $grey;
+      font-weight: map-get($font-weight, regular);
+      font-size: map-get($font-size, enlarged);
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: map-get($letter-spacing, standard);
+    }
+  }
+}
 
-// .signature {
-//   font-weight: map-get($font-weight, medium);
-//   font-size: map-get($font-size, enlarged);
-//   line-height: 1.19;
-//   text-align: center;
-//   letter-spacing: map-get($letter-spacing, standard);
-//   padding: 30px 0;
+@media screen and (min-width: 1200px) {
+  .our-team-background {
+    background: $background-article;
+  }
 
-//   &__position {
-//     padding-top: 10px;
-//     color: $grey;
-//     font-weight: map-get($font-weight, regular);
-//     font-size: map-get($font-size, enlarged);
-//     line-height: 1.19;
-//     text-align: center;
-//     letter-spacing: map-get($letter-spacing, standard);
-//   }
-// }
+  .our-team-section {
+    &__images {
+      display: flex;
+      justify-content: space-between;
+    }
 
-// .our-clients-logos {
-//   display: flex;
-//   justify-content: space-between;
-// }
-// .client-icon {
-//   width: 170px;
-//   height: 92px;
-//   border: 1px solid $icon-background;
-//   border-radius: 4px;
-//   fill: $icon-background;
-//   cursor: pointer;
+    &__card {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      gap: 30px;
 
-//   &:hover {
-//     fill: $blue;
-//     border-color: $blue;
-//   }
-// }
+      & > figure > img {
+        width: 270px;
+        height: 260px;
+      }
+    }
+  }
 
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-//   .welcome-section-background {
-//     max-width: 767px;
-//     margin: 0 auto;
-//     background-image: linear-gradient(
-//         0deg,
-//         rgba(47, 48, 58, 0.4) 0%,
-//         rgba(47, 48, 58, 0.4) 100%
-//       ),
-//       url("../images/welcome-section-background-image@2x.jpg");
-//     background-size: cover;
-//   }
-// }
+  .signature {
+    font-weight: map-get($font-weight, medium);
+    font-size: map-get($font-size, enlarged);
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: map-get($letter-spacing, standard);
+    padding: 30px 0;
+
+    &__position {
+      padding-top: 10px;
+      color: $grey;
+      font-weight: map-get($font-weight, regular);
+      font-size: map-get($font-size, enlarged);
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: map-get($letter-spacing, standard);
+    }
+  }
+}
+
+.our-clients-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 14px;
+}
+.client-icon {
+  width: 210px;
+  height: 92px;
+  border: 1px solid $icon-background;
+  border-radius: 4px;
+  fill: $icon-background;
+  cursor: pointer;
+
+  &:hover {
+    fill: $blue;
+    border-color: $blue;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients-logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px;
+  }
+  .client-icon {
+    width: 226px;
+    height: 92px;
+    border: 1px solid $icon-background;
+    border-radius: 4px;
+    fill: $icon-background;
+    cursor: pointer;
+
+    &:hover {
+      fill: $blue;
+      border-color: $blue;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients-logos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .client-icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-background;
+    border-radius: 4px;
+    fill: $icon-background;
+    cursor: pointer;
+
+    &:hover {
+      fill: $blue;
+      border-color: $blue;
+    }
+  }
+}
