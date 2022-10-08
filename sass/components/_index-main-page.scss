@@ -164,6 +164,9 @@
 
   .icon {
     width: 100%;
+    justify-content: center;
+    justify-items: center;
+    border: 1px solid red;
   }
 
   .article-section > ul {

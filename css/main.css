@@ -433,6 +433,11 @@ body {
   }
   .icon {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    border: 1px solid red;
   }
   .article-section > ul {
     display: -webkit-box;
