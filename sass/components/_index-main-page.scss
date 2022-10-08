@@ -285,13 +285,14 @@
     justify-content: space-between;
     margin: 0 auto;
     gap: 30px;
-    padding: 0 14px;
+    margin: 0 14px;
   }
 
   &__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    width: 450px;
 
     & > figure > img {
       width: 450px;
@@ -307,7 +308,7 @@
   line-height: 1.19;
   text-align: center;
   letter-spacing: map-get($letter-spacing, standard);
-  padding: 30px 0;
+  padding-top: 30px;
 
   &__position {
     padding-top: 10px;
@@ -348,6 +349,7 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
+      width: 354px;
 
       & > figure > img {
         width: 354px;
@@ -362,7 +364,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: map-get($letter-spacing, standard);
-    padding: 30px 0;
+    padding-top: 30px;
 
     &__position {
       padding-top: 10px;
@@ -392,6 +394,7 @@
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
       gap: 30px;
+      width: 270px;
 
       & > figure > img {
         width: 270px;
@@ -406,7 +409,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: map-get($letter-spacing, standard);
-    padding: 30px 0;
+    padding-top: 30px;
 
     &__position {
       padding-top: 10px;

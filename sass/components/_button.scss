@@ -12,12 +12,21 @@
   line-height: 1.88;
   letter-spacing: map-get($letter-spacing, header);
   border: none;
+
+  &__icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .button--footer-position {
   @extend .button;
-  margin: 0 auto;
+  margin: 20px 120px 0;
   padding-right: 76px;
+  align-items: center;
 }
 
 .button--form-position {
@@ -66,7 +75,7 @@
     line-height: 1.88;
     letter-spacing: map-get($letter-spacing, header);
     border: none;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding-right: 76px;
   }
 
@@ -129,7 +138,7 @@
     line-height: 1.88;
     letter-spacing: map-get($letter-spacing, header);
     border: none;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding-right: 76px;
   }
 

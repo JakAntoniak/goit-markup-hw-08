@@ -1,15 +1,13 @@
-.social-media-section {
-  padding-top: 9px;
-}
-
 .social-media-block {
   display: flex;
   gap: 10px;
-  padding: 16px 32px 0;
+  padding: 0 137px 0;
   align-items: center;
 
   &--left {
-    padding: 0;
+    align-items: center;
+    padding-top: 0;
+    justify-content: space-between;
   }
 }
 
@@ -46,102 +44,102 @@
   }
 }
 
-//768
-
-.social-media-section {
-  padding-top: 9px;
-}
-
-.social-media-block {
-  display: flex;
-  gap: 10px;
-  padding: 16px 32px 0;
-  align-items: center;
-
-  &--left {
-    padding: 0;
+@media screen and (min-width: 768px) {
+  .social-media-section {
+    padding: 10px 89px 0 0;
   }
-}
 
-.circle {
-  border-radius: 50%;
-  background-color: $background-article;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
+  .social-media-block {
+    display: flex;
+    gap: 10px;
+    padding: 16px 24px 0;
+    align-items: center;
 
-  &--grey {
-    background-color: $footer-circle-bg;
+    &--left {
+      padding: 0;
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    background-color: $background-article;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     cursor: pointer;
+
+    &--grey {
+      background-color: $footer-circle-bg;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &--grey:hover {
+      background-color: $blue;
+    }
   }
 
-  &:hover,
-  &--grey:hover {
-    background-color: $blue;
-  }
-}
+  .social-media-icon {
+    fill: $icon-background;
 
-.social-media-icon {
-  fill: $icon-background;
+    &--white {
+      fill: $white;
+    }
 
-  &--white {
-    fill: $white;
-  }
-
-  &:hover {
-    fill: $white;
-  }
-}
-
-//1200
-
-.social-media-section {
-  padding-top: 9px;
-}
-
-.social-media-block {
-  display: flex;
-  gap: 10px;
-  padding: 16px 32px 0;
-  align-items: center;
-
-  &--left {
-    padding: 0;
+    &:hover {
+      fill: $white;
+    }
   }
 }
 
-.circle {
-  border-radius: 50%;
-  background-color: $background-article;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .social-media-section {
+    padding-top: 9px;
+  }
 
-  &--grey {
-    background-color: $footer-circle-bg;
+  .social-media-block {
+    display: flex;
+    gap: 10px;
+    padding: 16px 32px 0;
+    align-items: center;
+
+    &--left {
+      padding: 0;
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    background-color: $background-article;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     cursor: pointer;
+
+    &--grey {
+      background-color: $footer-circle-bg;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &--grey:hover {
+      background-color: $blue;
+    }
   }
 
-  &:hover,
-  &--grey:hover {
-    background-color: $blue;
-  }
-}
+  .social-media-icon {
+    fill: $icon-background;
 
-.social-media-icon {
-  fill: $icon-background;
+    &--white {
+      fill: $white;
+    }
 
-  &--white {
-    fill: $white;
-  }
-
-  &:hover {
-    fill: $white;
+    &:hover {
+      fill: $white;
+    }
   }
 }
