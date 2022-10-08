@@ -399,7 +399,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  border: 1px solid red;
 }
 
 .article-section > ul {
@@ -711,6 +710,10 @@ body {
   border-radius: 4px;
   fill: #afb1b8;
   cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
 }
 .client-icon:hover {
   fill: #2196f3;
@@ -734,6 +737,10 @@ body {
     border-radius: 4px;
     fill: #afb1b8;
     cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
   }
   .client-icon:hover {
     fill: #2196f3;
@@ -756,6 +763,10 @@ body {
     border-radius: 4px;
     fill: #afb1b8;
     cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
   }
   .client-icon:hover {
     fill: #2196f3;

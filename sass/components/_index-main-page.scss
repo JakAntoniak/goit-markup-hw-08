@@ -130,7 +130,6 @@
   width: 100%;
   justify-content: center;
   justify-items: center;
-  border: 1px solid red;
 }
 
 .article-section > ul {
@@ -447,6 +446,8 @@
   border-radius: 4px;
   fill: $icon-background;
   cursor: pointer;
+  justify-content: center;
+  justify-items: center;
 
   &:hover {
     fill: $blue;
@@ -467,6 +468,8 @@
     border-radius: 4px;
     fill: $icon-background;
     cursor: pointer;
+    justify-content: center;
+    justify-items: center;
 
     &:hover {
       fill: $blue;
@@ -487,6 +490,8 @@
     border-radius: 4px;
     fill: $icon-background;
     cursor: pointer;
+    justify-content: center;
+    justify-items: center;
 
     &:hover {
       fill: $blue;
