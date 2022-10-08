@@ -436,7 +436,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     justify-items: center;
-    border: 1px solid red;
   }
   .article-section > ul {
     display: -webkit-box;
@@ -1689,16 +1688,16 @@ body {
     position: absolute;
   }
   .form-icon__position1 {
-    top: 104px;
-    left: 52px;
+    top: 120px;
+    left: 55px;
   }
   .form-icon__position2 {
-    top: 172px;
-    left: 52px;
+    top: 190px;
+    left: 55px;
   }
   .form-icon__position3 {
-    top: 240px;
-    left: 52px;
+    top: 255px;
+    left: 55px;
   }
   .modal-form__label:focus-within svg {
     fill: #2196f3;
