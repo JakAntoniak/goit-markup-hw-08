@@ -1,8 +1,9 @@
 .social-media-block {
   display: flex;
   gap: 10px;
-  padding: 16px 137px 24px;
+  padding: 16px 120px 24px;
   align-items: center;
+  justify-content: space-between;
 
   &--left {
     align-items: center;
@@ -54,6 +55,7 @@
     gap: 10px;
     padding: 16px 74px 24px;
     align-items: center;
+    justify-content: space-between;
 
     &--left {
       padding: 0;
